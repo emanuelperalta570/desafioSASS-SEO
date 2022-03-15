@@ -1,4 +1,8 @@
-.logo{
-    width: 100%;
-    height: auto;
+@mixin logo($width,$height){
+    width: $width;
+    height: $height;
+}
+
+.img-logo{
+    @include logo(30%,auto);
 }

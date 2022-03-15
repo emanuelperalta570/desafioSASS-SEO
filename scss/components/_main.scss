@@ -27,11 +27,17 @@
     margin:0px!important;
 }
 
-.footer{
+.display-flex{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     justify-items: space-evenly ;
+}
+
+.display-flex-column{
+    @extend .display-flex;
+    flex-direction: column;
 }
 
 body{
@@ -39,12 +45,17 @@ body{
         background-image: url(../assets/img/mini1.jpg);
         background-repeat: no-repeat;
         background-size:cover;
-        padding: 6rem;
-        margin:6rem;
+        padding: 100px;
+        margin:0px;
         }
     footer{
-        h3.col-4.footer{
+        h3.col-4.display-flex{
             justify-content: center;
+            color:map-get($estilo-letra, color);
         }
     }
+}
+
+.color-red{
+    color:map-get($estilo-letra,color);
 }

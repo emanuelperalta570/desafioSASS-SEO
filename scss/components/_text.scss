@@ -6,3 +6,17 @@
     color:black;
 }
 
+.white{
+    color:white;
+}
+
+
+
+@each $tamanio , $pixeles in $tamanio-letras{
+        .letra-#{$tamanio}{
+            font-size:$pixeles;
+        }
+}
+
+
+
